@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .title{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(0,139, 139,0.8);
+    font-size: xx-small;
+    padding: 10px;
+  }
+
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0px;
+      /* ... */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    border: 1px solid white;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links {
+    border: 1px solid white;  /* For debugging */
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .mainpage {
+    margin-left: 20px;
+  }
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+  }
+ 
+  .carousel .carousel_item,
+  .carousel .carousel_item--hidden {
+    display: none;
+  }
+ 
+  .carousel .carousel_item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+ 
+  .carousel .carousel_item--visible {
+    display: block;
+  }
+ 
+  .photo-grid-container .carousel_actions {
+    display: flex;
+    width: 61%;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+  }
+ 
+  .photo-grid-container .carousel_actions button {
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+  }
+
+  .photo-grid-container .carousel_actions button:focus {
+      background: orange;
+      border: 3px solid rgba(0, 139, 139, 0.8);
+  }
+
+ 
+  .photo-grid-container .carousel_actions button#carousel_button--prev {
+    margin-left: 20px;
+  }
+ 
+  .photo-grid-container .carousel_actions button#carousel_button--next {
+    margin-right: 20px;
+  }
+
+  .first-item {
+    order: 1;
+  }
+  
+  .last-item {
+    order: -1;
+  }
+  
+  .photo-grid-item {
+    display: flex;
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
+
+  .social,
+  .subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+  }
