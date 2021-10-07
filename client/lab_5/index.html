@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cole Barrett Lab 5: HTML 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+  <div class="wrapper">
+    <div class="container">
+        <div class="box title has-background-link">
+          <h1>Cole Barrett's Lab 5</h1>
+        </div>
+        <div class="columns is-multiline">
+            <div class="column is-offset-one-fifth is-vcentered is-3">
+                <div class="box">
+                    <strong>First Name</strong>
+                    <div class="pt-3"></div>
+                    <input class="input is-small" type="text">
+                    <div class="pt-3"></div>
+                    <strong>Food Preference</strong>
+                    <div class="pt-3"></div>
+                    <input class="input is-small" type="text">
+                    <div class="pt-3"></div>
+                    <strong>Veggie or Vegan?</strong>
+                    <div class="pt-3"></div>
+                    <div class="control">
+                        <label class="radio">
+                          <input type="radio" name="answer">
+                          Yes
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="answer">
+                          No
+                        </label>
+                    </div>
+
+                    <div class="pt-3"></div>
+
+                    <form action="/api">
+                        <button class="button is-success">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <div class="column is-vcentered is-5">
+                <div class="box">
+                    This is going to be something in two weeks.
+                </div> 
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
