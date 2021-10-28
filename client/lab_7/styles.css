@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+  }
+
+#mapid {
+  height: 340px;
+  width: 430px;
+}
+
+html {
+  height: 100%;
+}
